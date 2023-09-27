@@ -1,35 +1,10 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import * as React from 'react';
+import {Text, View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {MaterialCommunityIcons} from 'react-native-vector-icons/MaterialCommunityIcons';
+import Navigator from './src/navigation';
 
-import React, {useState} from 'react';
-import {
-  FlatList,
-  Keyboard,
-  KeyboardAvoidingView,
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  TouchableWithoutFeedback,
-  useColorScheme,
-  View,
-} from 'react-native';
-import Task from './src/components/template/Task';
-import Icon from 'react-native-vector-icons/Entypo';
-import {Header} from 'react-native/Libraries/NewAppScreen';
-import Home from './src/screens/Home';
-
-const App = () => {
-  return <Home />;
-};
-
-const styles = StyleSheet.create({});
-
-export default App;
+export default function App() {
+  return <Navigator />;
+}

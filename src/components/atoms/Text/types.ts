@@ -6,6 +6,5 @@ export interface AppTextProps
     CustomTextProps,
     CustomDimentions {
   style?: StyleProp<TextStyle>;
-  center?: boolean | undefined;
   children?: JSX.Element | JSX.Element[] | string | any;
 }

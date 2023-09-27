@@ -5,8 +5,9 @@ import {colors} from '../../../theme';
 
 export const AppText: React.FC<AppTextProps> = ({
   children,
-  color = colors.black,
+  textColor = colors.black,
   bgColor,
+  custFamily,
   h1,
   h2,
   h3,
@@ -33,18 +34,21 @@ export const AppText: React.FC<AppTextProps> = ({
   width,
   height,
   center,
+  align,
   style,
   ...props
 }) => {
+  // console.log(custFamily, ';;;;;;;;;');
   const textStyles: StyleProp<TextStyle> = StyleSheet.flatten([
-    color !== undefined && {color: color},
+    textColor !== undefined && {color: textColor},
     bgColor !== undefined && {backgroundColor: bgColor},
     h1 !== undefined && {fontSize: 36, fontWeight: '900'},
     h2 !== undefined && {fontSize: 28, fontWeight: '600'},
     h3 !== undefined && {fontSize: 24, fontWeight: '500'},
     h4 !== undefined && {fontSize: 22, fontWeight: '400'},
-    textSize !== undefined && {fontSize: 18},
+    textSize !== undefined && {fontSize: textSize},
     weight !== undefined && {fontWeight: weight},
+    custFamily !== undefined && {fontFamily: custFamily},
     p !== undefined && {padding: p},
     pl !== undefined && {paddingLeft: pl},
     pt !== undefined && {paddingTop: pt},
@@ -67,8 +71,9 @@ export const AppText: React.FC<AppTextProps> = ({
     center !== undefined && {textAlign: 'center'},
     style,
   ]);
+  // console.log(textSize, '-----');
   return (
-    <Text style={textStyles} {...props}>
+    <Text style={[textStyles]} {...props}>
       {children}
     </Text>
   );

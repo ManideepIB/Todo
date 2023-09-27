@@ -12,6 +12,7 @@ export type Colors = {
   shadedblack: '#171717' | undefined;
   grey: '#f7f7f7' | undefined;
   darkgrey: '#808080';
+  purple: '#9969C7' | undefined;
 
   bg_primary: '#fff' | undefined;
   bg_secondary: '#e8ecf1' | undefined;
@@ -23,7 +24,9 @@ export type Colors = {
   error: '' | undefined;
   warning: '' | undefined;
 
-  AppTheme: '#EAF1F9' | undefined;
+  // AppTheme: '#EAF1F9' | undefined;
+  AppTheme: '#F9A31E' | undefined;
+  // AppTheme: '#4cc0ee' | undefined;
   BasicWhite: '#fff' | undefined;
   BasicBlue: '#4700D8' | undefined;
 
@@ -33,10 +36,10 @@ export type Colors = {
   AlertGreen: '#27c97b' | undefined;
   AlertBlue: '#00a6e3' | undefined;
 
-  Red: '#E71F2C' | undefined;
-  Orange: '#F9A31E' | undefined;
-  Blue: '#0B6FB8' | undefined;
-  Green: '#159F4E' | undefined;
+  red: '#E71F2C' | undefined;
+  orange: '#F9A31E' | undefined;
+  blue: '#0B6FB8' | undefined;
+  green: '#159F4E' | undefined;
 
   //Field border
   FieldBorderColorActive: '#000' | undefined;

@@ -1,0 +1,157 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Algereya/Alegreya-Black.ttf",
+      "sha1": "01536cd02c585bb6267b5c318488e1d8f5430047"
+    },
+    {
+      "path": "src/assets/fonts/Algereya/Alegreya-BlackItalic.ttf",
+      "sha1": "7be271719498276bf1f00b0df5ce126718952828"
+    },
+    {
+      "path": "src/assets/fonts/Algereya/Alegreya-Bold.ttf",
+      "sha1": "0a38ea78df6eebc02d4c6cb7bac133f40bf697a5"
+    },
+    {
+      "path": "src/assets/fonts/Algereya/Alegreya-BoldItalic.ttf",
+      "sha1": "9eba402b5d532b60b66b7e2c0057e940782d75a5"
+    },
+    {
+      "path": "src/assets/fonts/Algereya/Alegreya-ExtraBold.ttf",
+      "sha1": "3ba923665f34858b0c70aed87d5e95b062b22d53"
+    },
+    {
+      "path": "src/assets/fonts/Algereya/Alegreya-ExtraBoldItalic.ttf",
+      "sha1": "1e851784d55ba108be41ba92bf416be038c6fc2b"
+    },
+    {
+      "path": "src/assets/fonts/Algereya/Alegreya-Italic.ttf",
+      "sha1": "e2728985e3e3ae5e3cd5284dc0417b7b0169b8e3"
+    },
+    {
+      "path": "src/assets/fonts/Algereya/Alegreya-Medium.ttf",
+      "sha1": "aecf9522569ce79dce6d7e12910109903ae263e9"
+    },
+    {
+      "path": "src/assets/fonts/Algereya/Alegreya-MediumItalic.ttf",
+      "sha1": "aaa985ef2a4b0776e320ca6f7461447c076febf9"
+    },
+    {
+      "path": "src/assets/fonts/Algereya/Alegreya-Regular.ttf",
+      "sha1": "301bcee0334bb1e956c204e3f4603972d258aaae"
+    },
+    {
+      "path": "src/assets/fonts/Algereya/Alegreya-SemiBold.ttf",
+      "sha1": "2d16480c40b04451910d896fe8cf780885581280"
+    },
+    {
+      "path": "src/assets/fonts/Algereya/Alegreya-SemiBoldItalic.ttf",
+      "sha1": "92ffb6df2628e50db8c949f5a919bcef9980bf69"
+    },
+    {
+      "path": "src/assets/fonts/Algereya-sans/AlegreyaSans-Black.ttf",
+      "sha1": "e2c92d8f696db25c7c104d59fe4153da526a7976"
+    },
+    {
+      "path": "src/assets/fonts/Algereya-sans/AlegreyaSans-BlackItalic.ttf",
+      "sha1": "0da215e2b0351b8a318fa29cfe7f995b9024c96c"
+    },
+    {
+      "path": "src/assets/fonts/Algereya-sans/AlegreyaSans-Bold.ttf",
+      "sha1": "f88734a28bac669376d66662dac4fa81cb59705e"
+    },
+    {
+      "path": "src/assets/fonts/Algereya-sans/AlegreyaSans-BoldItalic.ttf",
+      "sha1": "83b23ab82bae93fbd475e238e6b9aa4dfe0e235d"
+    },
+    {
+      "path": "src/assets/fonts/Algereya-sans/AlegreyaSans-ExtraBold.ttf",
+      "sha1": "3984c68344841f8d02136f5f26417cb7967fa2b2"
+    },
+    {
+      "path": "src/assets/fonts/Algereya-sans/AlegreyaSans-ExtraBoldItalic.ttf",
+      "sha1": "ea18994d0007910546bbd46fa77024b31be17fae"
+    },
+    {
+      "path": "src/assets/fonts/Algereya-sans/AlegreyaSans-Italic.ttf",
+      "sha1": "ec81402943779a4157007d9b5f3822828f17be48"
+    },
+    {
+      "path": "src/assets/fonts/Algereya-sans/AlegreyaSans-Light.ttf",
+      "sha1": "109e0c62b47a946d7df5ff13824fd876810d7485"
+    },
+    {
+      "path": "src/assets/fonts/Algereya-sans/AlegreyaSans-LightItalic.ttf",
+      "sha1": "d9c3ee532418f121dea82e12c1ec50b060e37b61"
+    },
+    {
+      "path": "src/assets/fonts/Algereya-sans/AlegreyaSans-Medium.ttf",
+      "sha1": "f132806ccb2fd0844eb8ba43c9f5f684697e285f"
+    },
+    {
+      "path": "src/assets/fonts/Algereya-sans/AlegreyaSans-MediumItalic.ttf",
+      "sha1": "05f6736b7c23f301b2503e11b057ec54847b0653"
+    },
+    {
+      "path": "src/assets/fonts/Algereya-sans/AlegreyaSans-Regular.ttf",
+      "sha1": "f7948392bdd91cb15db72254357f32d25b8566c0"
+    },
+    {
+      "path": "src/assets/fonts/Algereya-sans/AlegreyaSans-Thin.ttf",
+      "sha1": "d1cfd3600b13d727a88d13984130bcf8c9df3b73"
+    },
+    {
+      "path": "src/assets/fonts/Algereya-sans/AlegreyaSans-ThinItalic.ttf",
+      "sha1": "ee3dbc11980a0b798ec9a669fcdaec8a6606895e"
+    },
+    {
+      "path": "src/assets/fonts/Roboto/Roboto-Black.ttf",
+      "sha1": "3f8e401d808f6ce84b542266726514ac8be73171"
+    },
+    {
+      "path": "src/assets/fonts/Roboto/Roboto-BlackItalic.ttf",
+      "sha1": "03d6e3747d862385dbe48e8296385b9236101a62"
+    },
+    {
+      "path": "src/assets/fonts/Roboto/Roboto-Bold.ttf",
+      "sha1": "62442a18a9fe9457c1afeabf683d263a691b7798"
+    },
+    {
+      "path": "src/assets/fonts/Roboto/Roboto-BoldItalic.ttf",
+      "sha1": "2f10ad9e8cab0880182705c4e0fbaeabae706e64"
+    },
+    {
+      "path": "src/assets/fonts/Roboto/Roboto-Italic.ttf",
+      "sha1": "65f3f6a7e1bd2fa6f2df35e4b07775d7f1dde4f0"
+    },
+    {
+      "path": "src/assets/fonts/Roboto/Roboto-Light.ttf",
+      "sha1": "18788c5d630fa695f9283f6393bfa541b2031508"
+    },
+    {
+      "path": "src/assets/fonts/Roboto/Roboto-LightItalic.ttf",
+      "sha1": "6e01f9df9449565697032b002706a94b51862bbe"
+    },
+    {
+      "path": "src/assets/fonts/Roboto/Roboto-Medium.ttf",
+      "sha1": "3c6a09fcc6a454924c81af7dff94fc6d399ed79b"
+    },
+    {
+      "path": "src/assets/fonts/Roboto/Roboto-MediumItalic.ttf",
+      "sha1": "b3aa2d8f16d5a331fdced82f213a052b204eaca0"
+    },
+    {
+      "path": "src/assets/fonts/Roboto/Roboto-Regular.ttf",
+      "sha1": "56c5c0d38bde4c1f1549dda43db37b09c608aad3"
+    },
+    {
+      "path": "src/assets/fonts/Roboto/Roboto-Thin.ttf",
+      "sha1": "58c733e22bceeaf9609ce578eca92ac303c6d92f"
+    },
+    {
+      "path": "src/assets/fonts/Roboto/Roboto-ThinItalic.ttf",
+      "sha1": "cc79d5a23bd0ec08b1d99f5390bf33cacc3082f4"
+    }
+  ]
+}

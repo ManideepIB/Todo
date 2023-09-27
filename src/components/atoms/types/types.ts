@@ -17,20 +17,24 @@ export type CustomDimentions = {
   mv?: number | undefined;
   bw?: number | undefined;
   br?: number | undefined;
-  borderColor?: string | undefined;
   width?: any | undefined;
   height?: any | undefined;
   flex?: number | undefined;
+  center?: boolean | undefined;
+  borderColor?: string | undefined;
+  align?: FlexAlignType | undefined;
 };
 
 export type CustomTextProps = {
-  color?: string | undefined;
+  textColor?: string | undefined;
   bgColor?: string | undefined;
   h1?: boolean | undefined;
   h2?: boolean | undefined;
   h3?: boolean | undefined;
   h4?: boolean | undefined;
   textSize?: number | undefined;
+  custFamily?: string | undefined;
+
   weight?:
     | 'normal'
     | 'bold'
@@ -44,6 +48,12 @@ export type CustomTextProps = {
     | '800'
     | '900'
     | undefined;
+};
+
+export type CustomTextInputProps = {
+  label: string | undefined;
+
+  borderWidth?: number | undefined;
 };
 
 export type CustomViewProps = {
@@ -61,4 +71,11 @@ export type CustomViewProps = {
     | undefined;
   center?: boolean | undefined;
   boxshadow?: true | undefined;
+};
+
+export type CustomButtonProps = {
+  activeOpacity?: number | undefined;
+  buttonTitle: string | undefined;
+  color?: string | undefined;
+  borderRadius?: number | undefined;
 };

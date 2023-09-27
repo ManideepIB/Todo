@@ -4,12 +4,15 @@ import {
   ViewStyle,
   StyleSheet,
   TextStyle,
+  View,
 } from 'react-native';
 import React from 'react';
-import {CustumTextInputProps} from './types';
+import {AppTextInputProps} from './types';
+import {AppText} from '../Text/AppText';
+import {colors} from '../../../theme';
 
-export const AppTextInput: React.FC<CustumTextInputProps> = ({
-  color,
+export const AppTextInput: React.FC<AppTextInputProps> = ({
+  textColor,
   bgColor,
   h1,
   h2,
@@ -32,10 +35,12 @@ export const AppTextInput: React.FC<CustumTextInputProps> = ({
   mh,
   mv,
   br,
-  bw,
-  borderColor,
-  width,
-  height,
+  bw = 1,
+  borderColor = colors.darkgrey,
+
+  width = '100%',
+  height = 40,
+  // borderWidth = 1,
   flex,
   label,
   placeholder,
@@ -43,7 +48,7 @@ export const AppTextInput: React.FC<CustumTextInputProps> = ({
   ...props
 }) => {
   const customInputStyles: StyleProp<TextStyle> = StyleSheet.flatten([
-    color !== undefined && {color: color},
+    textColor !== undefined && {color: textColor},
     bgColor !== undefined && {backgroundColor: bgColor},
     h1 !== undefined && {fontSize: 36, fontWeight: '800'},
     h2 !== undefined && {fontSize: 28, fontWeight: '700'},
@@ -68,16 +73,41 @@ export const AppTextInput: React.FC<CustumTextInputProps> = ({
     br !== undefined && {borderRadius: br},
     bw !== undefined && {borderWidth: bw},
     borderColor !== undefined && {borderColor: borderColor},
+    // borderWidth !== undefined && {borderWidth: borderWidth},
+    // borderBWidth !== undefined && {borderBottomWidth: borderBottomWidth},
+    // borderRadius !== undefined && {borderRadius: borderRadius},
     width !== undefined && {width: width},
     height !== undefined && {height: height},
     flex !== undefined && {flex: flex},
+
     style,
   ]);
   return (
-    <RNTextInput
-      placeholder={placeholder ? placeholder : label}
-      style={customInputStyles}
-      {...props}
-    />
+    <View>
+      {label && (
+        <AppText
+          mv={10}
+          textSize={26}
+          custFamily="Alegreya-MediumItalic"
+          textColor={textColor}
+          style={styles.label}>
+          {label}
+        </AppText>
+      )}
+      <RNTextInput
+        placeholder={placeholder}
+        style={[styles.input, customInputStyles]}
+        {...props}
+      />
+    </View>
   );
 };
+
+const styles = StyleSheet.create({
+  input: {
+    borderWidth: 1,
+    borderRadius: 15,
+    paddingLeft: 15,
+  },
+  label: {},
+});

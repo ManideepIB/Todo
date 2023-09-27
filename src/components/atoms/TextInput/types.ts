@@ -1,11 +1,14 @@
 import {StyleProp, TextInputProps, TextStyle} from 'react-native';
-import {CustomDimentions, CustomTextProps} from '../types/types';
+import {
+  CustomDimentions,
+  CustomTextProps,
+  CustomTextInputProps,
+} from '../types/types';
 
-export interface CustumTextInputProps
+export interface AppTextInputProps
   extends TextInputProps,
     CustomDimentions,
-    CustomTextProps {
+    CustomTextProps,
+    CustomTextInputProps {
   style?: StyleProp<TextStyle>;
-  label: string | undefined;
-  placeholder: string | undefined;
 }
