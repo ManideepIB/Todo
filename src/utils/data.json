@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "taskName": "Buy groceries",
+    "category": "Shopping",
+    "dateTime": "2023-09-20 14:00",
+    "description": "Buy milk, eggs, and bread.",
+    "important": true,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 2,
+    "taskName": "Complete project report",
+    "category": "Work",
+    "dateTime": "2023-09-22 10:30",
+    "description": "Finish the quarterly project report.",
+    "important": false,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 3,
+    "taskName": "Go for a run",
+    "category": "Fitness",
+    "dateTime": "2023-09-21 07:00",
+    "description": "Run for 30 minutes in the park.",
+    "important": false,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 4,
+    "taskName": "Read a book",
+    "category": "Reading",
+    "dateTime": "2023-09-25 20:00",
+    "description": "Read 'The Great Gatsby' by F. Scott Fitzgerald.",
+    "important": true,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 5,
+    "taskName": "Write a blog post",
+    "category": "Work",
+    "dateTime": "2023-09-24 16:00",
+    "description": "Write a blog post about time management.",
+    "important": false,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 6,
+    "taskName": "Call mom",
+    "category": "Personal",
+    "dateTime": "2023-09-23 19:30",
+    "description": "Call mom to catch up on family news.",
+    "important": true,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 7,
+    "taskName": "Plan a vacation",
+    "category": "Travel",
+    "dateTime": "2023-09-30 12:00",
+    "description": "Start planning a vacation to the beach.",
+    "important": false,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 8,
+    "taskName": "Learn a new language",
+    "category": "Learning",
+    "dateTime": "2023-09-27 18:00",
+    "description": "Begin learning Spanish using a language app.",
+    "important": false,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 9,
+    "taskName": "Cook dinner",
+    "category": "Home",
+    "dateTime": "2023-09-20 19:00",
+    "description": "Prepare a healthy dinner for the family.",
+    "important": false,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 10,
+    "taskName": "Attend team meeting",
+    "category": "Work",
+    "dateTime": "2023-09-21 10:00",
+    "description": "Participate in the weekly team meeting.",
+    "important": false,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 11,
+    "taskName": "Write thank-you notes",
+    "category": "Personal",
+    "dateTime": "2023-09-26 15:30",
+    "description": "Send thank-you notes for birthday gifts.",
+    "important": false,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 12,
+    "taskName": "Fix the leaky faucet",
+    "category": "Home",
+    "dateTime": "2023-09-28 17:00",
+    "description": "Call a plumber to fix the kitchen faucet.",
+    "important": true,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 13,
+    "taskName": "Watch a movie",
+    "category": "Entertainment",
+    "dateTime": "2023-09-29 20:30",
+    "description": "Watch the latest blockbuster movie.",
+    "important": false,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 14,
+    "taskName": "Visit the dentist",
+    "category": "Health",
+    "dateTime": "2023-09-23 14:15",
+    "description": "Attend the dental check-up appointment.",
+    "important": true,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 15,
+    "taskName": "Pay bills",
+    "category": "Finances",
+    "dateTime": "2023-09-25 11:00",
+    "description": "Pay utility and credit card bills.",
+    "important": false,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 16,
+    "taskName": "Organize the closet",
+    "category": "Home",
+    "dateTime": "2023-09-26 16:45",
+    "description": "Declutter and organize the bedroom closet.",
+    "important": false,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 17,
+    "taskName": "Send work email",
+    "category": "Work",
+    "dateTime": "2023-09-22 14:30",
+    "description": "Compose and send an important work email.",
+    "important": true,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 18,
+    "taskName": "Practice guitar",
+    "category": "Hobby",
+    "dateTime": "2023-09-29 18:00",
+    "description": "Practice playing the guitar for 1 hour.",
+    "important": false,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 19,
+    "taskName": "Go for a hike",
+    "category": "Fitness",
+    "dateTime": "2023-09-30 08:00",
+    "description": "Hike in the nearby mountains with friends.",
+    "important": false,
+    "files": [],
+    "completed": false
+  },
+  {
+    "id": 20,
+    "taskName": "Attend a webinar",
+    "category": "Learning",
+    "dateTime": "2023-09-28 12:30",
+    "description": "Participate in a webinar on digital marketing.",
+    "important": false,
+    "files": [],
+    "completed": false
+  }
+]

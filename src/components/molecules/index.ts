@@ -1,2 +1,2 @@
 export {CheckBox} from './CheckBox';
-export {DeleteIcon} from './DeleteIcon';
+// export {DeleteIcon} from './Icons';

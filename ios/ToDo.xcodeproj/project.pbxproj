@@ -14,6 +14,44 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-ToDo-ToDoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ToDo-ToDoTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C9FEB711439D47B9B3F1F8B3 /* Alegreya-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9AA082F302D34C63B8465376 /* Alegreya-Black.ttf */; };
+		8F8432BDE2A047FBB6E0F77E /* Alegreya-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F94283A4FB8412DBB050DFE /* Alegreya-BlackItalic.ttf */; };
+		A2901B70402646F3B1628DDA /* Alegreya-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 047B1FACD97245AB8AECF414 /* Alegreya-Bold.ttf */; };
+		CF852B2D0CC04D17BFD086DA /* Alegreya-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C221DEE65E5452AA953A8A3 /* Alegreya-BoldItalic.ttf */; };
+		BA4878F6201A43538EC69500 /* Alegreya-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF10210B03B34145802B7181 /* Alegreya-ExtraBold.ttf */; };
+		CD40C49776A8421E87B84A07 /* Alegreya-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5DD3BA3B59284F308DA5C655 /* Alegreya-ExtraBoldItalic.ttf */; };
+		341A1A12956446218AC46A80 /* Alegreya-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D23192B210AA4320B0457DFC /* Alegreya-Italic.ttf */; };
+		419E0012FE3745DD8AB9EDF4 /* Alegreya-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 671B9F4647114A3A93864374 /* Alegreya-Medium.ttf */; };
+		21071FD1DD9E4C52AA4553C2 /* Alegreya-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99FEC4E3179646278C0128F8 /* Alegreya-MediumItalic.ttf */; };
+		CB2858FF1E6E46918CD091D0 /* Alegreya-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B54EE6E896A47918DA67659 /* Alegreya-Regular.ttf */; };
+		17A63A33539B4758BC551A6B /* Alegreya-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1215FD6E092A457CA2686A5E /* Alegreya-SemiBold.ttf */; };
+		54F721C444ED49E8B9E1EEF4 /* Alegreya-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA4D461C064046838E9D51D4 /* Alegreya-SemiBoldItalic.ttf */; };
+		C966FCA577E74615903F6D31 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7583452DD734E479A4BAF86 /* Roboto-Black.ttf */; };
+		6129B669F0BC404699A1F4E2 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A29EFA9AC5F449FDB4F4E039 /* Roboto-BlackItalic.ttf */; };
+		A16C84C423CA4403A9A6F5C8 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 614A7A63F0A841F1A74CDC1D /* Roboto-Bold.ttf */; };
+		2A82DE61255543BCB16DD126 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D8AAE8C856B4D9C943782F3 /* Roboto-BoldItalic.ttf */; };
+		2DC4238AB628457A8872F2EB /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11BBD5FCF42945C3938AA900 /* Roboto-Italic.ttf */; };
+		1DD9E4C2BAB64E1480AF2AAB /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86D29A3FEC904A49A5D8F2B5 /* Roboto-Light.ttf */; };
+		CD52EE1DB88041749A4265BF /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C09995EA22F4FF99FA9588C /* Roboto-LightItalic.ttf */; };
+		6A4C44527DE643258D6D6592 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2E4E8C66BAF4B739F8CD8CF /* Roboto-Medium.ttf */; };
+		C3BFAC8400C64370B9E51A87 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8D35C15A224496A7A8C6D7 /* Roboto-MediumItalic.ttf */; };
+		A89B089A3D8A434D98165DF6 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF67CEA7CF7F4B3E9AA72D49 /* Roboto-Regular.ttf */; };
+		C65AB3A7940047179A4D64BB /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46CB18810EA148AE9073F7E4 /* Roboto-Thin.ttf */; };
+		C793BEF1F4314FA29E7F9D81 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D467069DDB704B49B15FC9E8 /* Roboto-ThinItalic.ttf */; };
+		AC73E66D89D54386B28929F5 /* AlegreyaSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CD3148B135D41A9A64EA517 /* AlegreyaSans-Black.ttf */; };
+		1B3781979C85409C8C5E5259 /* AlegreyaSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 786B23FC19AE467CBF42B982 /* AlegreyaSans-BlackItalic.ttf */; };
+		1B966C434520413E824A6D20 /* AlegreyaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C4DE44D343B41149BECAE66 /* AlegreyaSans-Bold.ttf */; };
+		36E7431247B04CD29CB042B4 /* AlegreyaSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 23C4755E1D92403EB46A4C60 /* AlegreyaSans-BoldItalic.ttf */; };
+		D2E6CD20F6714B4E96A572E0 /* AlegreyaSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC7F2477F7CF46048D04DAFC /* AlegreyaSans-ExtraBold.ttf */; };
+		3E1F348EFE634F35807AE542 /* AlegreyaSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1B4A1D63269450AB5A704A6 /* AlegreyaSans-ExtraBoldItalic.ttf */; };
+		409099F2A2854D57AE91D73C /* AlegreyaSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0FA6DD75CBB4FC3A22225A0 /* AlegreyaSans-Italic.ttf */; };
+		456DBE1BF38B4850A023076A /* AlegreyaSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43C026B44DCB401E84002F56 /* AlegreyaSans-Light.ttf */; };
+		F69B173F218F4D8ABC6CC96E /* AlegreyaSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2169E3385E894C6194CB2458 /* AlegreyaSans-LightItalic.ttf */; };
+		1CF1A404E0E0415D94B92818 /* AlegreyaSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5120142ED58842609BCFBC5D /* AlegreyaSans-Medium.ttf */; };
+		5BC25CA66CC541468B2649AF /* AlegreyaSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BDB630613CB4E1BAFA95F1E /* AlegreyaSans-MediumItalic.ttf */; };
+		6DFC0930DBB34261BBF3FBA3 /* AlegreyaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0EEEA0A89D74FF2B26DD2C4 /* AlegreyaSans-Regular.ttf */; };
+		FD2DC61C42FD4CD0B6A15E5C /* AlegreyaSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA6FCE272D574525AB1E782A /* AlegreyaSans-Thin.ttf */; };
+		E4949C5C341D4EE6A9816939 /* AlegreyaSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EB3BAF4EA3D44269D33BD49 /* AlegreyaSans-ThinItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +82,44 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ToDo/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ToDo-ToDoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDo-ToDoTests.release.xcconfig"; path = "Target Support Files/Pods-ToDo-ToDoTests/Pods-ToDo-ToDoTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		9AA082F302D34C63B8465376 /* Alegreya-Black.ttf */ = {isa = PBXFileReference; name = "Alegreya-Black.ttf"; path = "../src/assets/fonts/Algereya/Alegreya-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4F94283A4FB8412DBB050DFE /* Alegreya-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Alegreya-BlackItalic.ttf"; path = "../src/assets/fonts/Algereya/Alegreya-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		047B1FACD97245AB8AECF414 /* Alegreya-Bold.ttf */ = {isa = PBXFileReference; name = "Alegreya-Bold.ttf"; path = "../src/assets/fonts/Algereya/Alegreya-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3C221DEE65E5452AA953A8A3 /* Alegreya-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Alegreya-BoldItalic.ttf"; path = "../src/assets/fonts/Algereya/Alegreya-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AF10210B03B34145802B7181 /* Alegreya-ExtraBold.ttf */ = {isa = PBXFileReference; name = "Alegreya-ExtraBold.ttf"; path = "../src/assets/fonts/Algereya/Alegreya-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5DD3BA3B59284F308DA5C655 /* Alegreya-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "Alegreya-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Algereya/Alegreya-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D23192B210AA4320B0457DFC /* Alegreya-Italic.ttf */ = {isa = PBXFileReference; name = "Alegreya-Italic.ttf"; path = "../src/assets/fonts/Algereya/Alegreya-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		671B9F4647114A3A93864374 /* Alegreya-Medium.ttf */ = {isa = PBXFileReference; name = "Alegreya-Medium.ttf"; path = "../src/assets/fonts/Algereya/Alegreya-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		99FEC4E3179646278C0128F8 /* Alegreya-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Alegreya-MediumItalic.ttf"; path = "../src/assets/fonts/Algereya/Alegreya-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5B54EE6E896A47918DA67659 /* Alegreya-Regular.ttf */ = {isa = PBXFileReference; name = "Alegreya-Regular.ttf"; path = "../src/assets/fonts/Algereya/Alegreya-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1215FD6E092A457CA2686A5E /* Alegreya-SemiBold.ttf */ = {isa = PBXFileReference; name = "Alegreya-SemiBold.ttf"; path = "../src/assets/fonts/Algereya/Alegreya-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EA4D461C064046838E9D51D4 /* Alegreya-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "Alegreya-SemiBoldItalic.ttf"; path = "../src/assets/fonts/Algereya/Alegreya-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B7583452DD734E479A4BAF86 /* Roboto-Black.ttf */ = {isa = PBXFileReference; name = "Roboto-Black.ttf"; path = "../src/assets/fonts/Roboto/Roboto-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A29EFA9AC5F449FDB4F4E039 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-BlackItalic.ttf"; path = "../src/assets/fonts/Roboto/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		614A7A63F0A841F1A74CDC1D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; name = "Roboto-Bold.ttf"; path = "../src/assets/fonts/Roboto/Roboto-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9D8AAE8C856B4D9C943782F3 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-BoldItalic.ttf"; path = "../src/assets/fonts/Roboto/Roboto-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		11BBD5FCF42945C3938AA900 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; name = "Roboto-Italic.ttf"; path = "../src/assets/fonts/Roboto/Roboto-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		86D29A3FEC904A49A5D8F2B5 /* Roboto-Light.ttf */ = {isa = PBXFileReference; name = "Roboto-Light.ttf"; path = "../src/assets/fonts/Roboto/Roboto-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1C09995EA22F4FF99FA9588C /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-LightItalic.ttf"; path = "../src/assets/fonts/Roboto/Roboto-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A2E4E8C66BAF4B739F8CD8CF /* Roboto-Medium.ttf */ = {isa = PBXFileReference; name = "Roboto-Medium.ttf"; path = "../src/assets/fonts/Roboto/Roboto-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7C8D35C15A224496A7A8C6D7 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-MediumItalic.ttf"; path = "../src/assets/fonts/Roboto/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EF67CEA7CF7F4B3E9AA72D49 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; name = "Roboto-Regular.ttf"; path = "../src/assets/fonts/Roboto/Roboto-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		46CB18810EA148AE9073F7E4 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; name = "Roboto-Thin.ttf"; path = "../src/assets/fonts/Roboto/Roboto-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D467069DDB704B49B15FC9E8 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Roboto-ThinItalic.ttf"; path = "../src/assets/fonts/Roboto/Roboto-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0CD3148B135D41A9A64EA517 /* AlegreyaSans-Black.ttf */ = {isa = PBXFileReference; name = "AlegreyaSans-Black.ttf"; path = "../src/assets/fonts/Algereya-sans/AlegreyaSans-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		786B23FC19AE467CBF42B982 /* AlegreyaSans-BlackItalic.ttf */ = {isa = PBXFileReference; name = "AlegreyaSans-BlackItalic.ttf"; path = "../src/assets/fonts/Algereya-sans/AlegreyaSans-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9C4DE44D343B41149BECAE66 /* AlegreyaSans-Bold.ttf */ = {isa = PBXFileReference; name = "AlegreyaSans-Bold.ttf"; path = "../src/assets/fonts/Algereya-sans/AlegreyaSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		23C4755E1D92403EB46A4C60 /* AlegreyaSans-BoldItalic.ttf */ = {isa = PBXFileReference; name = "AlegreyaSans-BoldItalic.ttf"; path = "../src/assets/fonts/Algereya-sans/AlegreyaSans-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FC7F2477F7CF46048D04DAFC /* AlegreyaSans-ExtraBold.ttf */ = {isa = PBXFileReference; name = "AlegreyaSans-ExtraBold.ttf"; path = "../src/assets/fonts/Algereya-sans/AlegreyaSans-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E1B4A1D63269450AB5A704A6 /* AlegreyaSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; name = "AlegreyaSans-ExtraBoldItalic.ttf"; path = "../src/assets/fonts/Algereya-sans/AlegreyaSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D0FA6DD75CBB4FC3A22225A0 /* AlegreyaSans-Italic.ttf */ = {isa = PBXFileReference; name = "AlegreyaSans-Italic.ttf"; path = "../src/assets/fonts/Algereya-sans/AlegreyaSans-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		43C026B44DCB401E84002F56 /* AlegreyaSans-Light.ttf */ = {isa = PBXFileReference; name = "AlegreyaSans-Light.ttf"; path = "../src/assets/fonts/Algereya-sans/AlegreyaSans-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2169E3385E894C6194CB2458 /* AlegreyaSans-LightItalic.ttf */ = {isa = PBXFileReference; name = "AlegreyaSans-LightItalic.ttf"; path = "../src/assets/fonts/Algereya-sans/AlegreyaSans-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5120142ED58842609BCFBC5D /* AlegreyaSans-Medium.ttf */ = {isa = PBXFileReference; name = "AlegreyaSans-Medium.ttf"; path = "../src/assets/fonts/Algereya-sans/AlegreyaSans-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8BDB630613CB4E1BAFA95F1E /* AlegreyaSans-MediumItalic.ttf */ = {isa = PBXFileReference; name = "AlegreyaSans-MediumItalic.ttf"; path = "../src/assets/fonts/Algereya-sans/AlegreyaSans-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C0EEEA0A89D74FF2B26DD2C4 /* AlegreyaSans-Regular.ttf */ = {isa = PBXFileReference; name = "AlegreyaSans-Regular.ttf"; path = "../src/assets/fonts/Algereya-sans/AlegreyaSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CA6FCE272D574525AB1E782A /* AlegreyaSans-Thin.ttf */ = {isa = PBXFileReference; name = "AlegreyaSans-Thin.ttf"; path = "../src/assets/fonts/Algereya-sans/AlegreyaSans-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2EB3BAF4EA3D44269D33BD49 /* AlegreyaSans-ThinItalic.ttf */ = {isa = PBXFileReference; name = "AlegreyaSans-ThinItalic.ttf"; path = "../src/assets/fonts/Algereya-sans/AlegreyaSans-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +198,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				7EBED10E999E4392831801B5 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +224,52 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		7EBED10E999E4392831801B5 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				9AA082F302D34C63B8465376 /* Alegreya-Black.ttf */,
+				4F94283A4FB8412DBB050DFE /* Alegreya-BlackItalic.ttf */,
+				047B1FACD97245AB8AECF414 /* Alegreya-Bold.ttf */,
+				3C221DEE65E5452AA953A8A3 /* Alegreya-BoldItalic.ttf */,
+				AF10210B03B34145802B7181 /* Alegreya-ExtraBold.ttf */,
+				5DD3BA3B59284F308DA5C655 /* Alegreya-ExtraBoldItalic.ttf */,
+				D23192B210AA4320B0457DFC /* Alegreya-Italic.ttf */,
+				671B9F4647114A3A93864374 /* Alegreya-Medium.ttf */,
+				99FEC4E3179646278C0128F8 /* Alegreya-MediumItalic.ttf */,
+				5B54EE6E896A47918DA67659 /* Alegreya-Regular.ttf */,
+				1215FD6E092A457CA2686A5E /* Alegreya-SemiBold.ttf */,
+				EA4D461C064046838E9D51D4 /* Alegreya-SemiBoldItalic.ttf */,
+				B7583452DD734E479A4BAF86 /* Roboto-Black.ttf */,
+				A29EFA9AC5F449FDB4F4E039 /* Roboto-BlackItalic.ttf */,
+				614A7A63F0A841F1A74CDC1D /* Roboto-Bold.ttf */,
+				9D8AAE8C856B4D9C943782F3 /* Roboto-BoldItalic.ttf */,
+				11BBD5FCF42945C3938AA900 /* Roboto-Italic.ttf */,
+				86D29A3FEC904A49A5D8F2B5 /* Roboto-Light.ttf */,
+				1C09995EA22F4FF99FA9588C /* Roboto-LightItalic.ttf */,
+				A2E4E8C66BAF4B739F8CD8CF /* Roboto-Medium.ttf */,
+				7C8D35C15A224496A7A8C6D7 /* Roboto-MediumItalic.ttf */,
+				EF67CEA7CF7F4B3E9AA72D49 /* Roboto-Regular.ttf */,
+				46CB18810EA148AE9073F7E4 /* Roboto-Thin.ttf */,
+				D467069DDB704B49B15FC9E8 /* Roboto-ThinItalic.ttf */,
+				0CD3148B135D41A9A64EA517 /* AlegreyaSans-Black.ttf */,
+				786B23FC19AE467CBF42B982 /* AlegreyaSans-BlackItalic.ttf */,
+				9C4DE44D343B41149BECAE66 /* AlegreyaSans-Bold.ttf */,
+				23C4755E1D92403EB46A4C60 /* AlegreyaSans-BoldItalic.ttf */,
+				FC7F2477F7CF46048D04DAFC /* AlegreyaSans-ExtraBold.ttf */,
+				E1B4A1D63269450AB5A704A6 /* AlegreyaSans-ExtraBoldItalic.ttf */,
+				D0FA6DD75CBB4FC3A22225A0 /* AlegreyaSans-Italic.ttf */,
+				43C026B44DCB401E84002F56 /* AlegreyaSans-Light.ttf */,
+				2169E3385E894C6194CB2458 /* AlegreyaSans-LightItalic.ttf */,
+				5120142ED58842609BCFBC5D /* AlegreyaSans-Medium.ttf */,
+				8BDB630613CB4E1BAFA95F1E /* AlegreyaSans-MediumItalic.ttf */,
+				C0EEEA0A89D74FF2B26DD2C4 /* AlegreyaSans-Regular.ttf */,
+				CA6FCE272D574525AB1E782A /* AlegreyaSans-Thin.ttf */,
+				2EB3BAF4EA3D44269D33BD49 /* AlegreyaSans-ThinItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +367,44 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				C9FEB711439D47B9B3F1F8B3 /* Alegreya-Black.ttf in Resources */,
+				8F8432BDE2A047FBB6E0F77E /* Alegreya-BlackItalic.ttf in Resources */,
+				A2901B70402646F3B1628DDA /* Alegreya-Bold.ttf in Resources */,
+				CF852B2D0CC04D17BFD086DA /* Alegreya-BoldItalic.ttf in Resources */,
+				BA4878F6201A43538EC69500 /* Alegreya-ExtraBold.ttf in Resources */,
+				CD40C49776A8421E87B84A07 /* Alegreya-ExtraBoldItalic.ttf in Resources */,
+				341A1A12956446218AC46A80 /* Alegreya-Italic.ttf in Resources */,
+				419E0012FE3745DD8AB9EDF4 /* Alegreya-Medium.ttf in Resources */,
+				21071FD1DD9E4C52AA4553C2 /* Alegreya-MediumItalic.ttf in Resources */,
+				CB2858FF1E6E46918CD091D0 /* Alegreya-Regular.ttf in Resources */,
+				17A63A33539B4758BC551A6B /* Alegreya-SemiBold.ttf in Resources */,
+				54F721C444ED49E8B9E1EEF4 /* Alegreya-SemiBoldItalic.ttf in Resources */,
+				C966FCA577E74615903F6D31 /* Roboto-Black.ttf in Resources */,
+				6129B669F0BC404699A1F4E2 /* Roboto-BlackItalic.ttf in Resources */,
+				A16C84C423CA4403A9A6F5C8 /* Roboto-Bold.ttf in Resources */,
+				2A82DE61255543BCB16DD126 /* Roboto-BoldItalic.ttf in Resources */,
+				2DC4238AB628457A8872F2EB /* Roboto-Italic.ttf in Resources */,
+				1DD9E4C2BAB64E1480AF2AAB /* Roboto-Light.ttf in Resources */,
+				CD52EE1DB88041749A4265BF /* Roboto-LightItalic.ttf in Resources */,
+				6A4C44527DE643258D6D6592 /* Roboto-Medium.ttf in Resources */,
+				C3BFAC8400C64370B9E51A87 /* Roboto-MediumItalic.ttf in Resources */,
+				A89B089A3D8A434D98165DF6 /* Roboto-Regular.ttf in Resources */,
+				C65AB3A7940047179A4D64BB /* Roboto-Thin.ttf in Resources */,
+				C793BEF1F4314FA29E7F9D81 /* Roboto-ThinItalic.ttf in Resources */,
+				AC73E66D89D54386B28929F5 /* AlegreyaSans-Black.ttf in Resources */,
+				1B3781979C85409C8C5E5259 /* AlegreyaSans-BlackItalic.ttf in Resources */,
+				1B966C434520413E824A6D20 /* AlegreyaSans-Bold.ttf in Resources */,
+				36E7431247B04CD29CB042B4 /* AlegreyaSans-BoldItalic.ttf in Resources */,
+				D2E6CD20F6714B4E96A572E0 /* AlegreyaSans-ExtraBold.ttf in Resources */,
+				3E1F348EFE634F35807AE542 /* AlegreyaSans-ExtraBoldItalic.ttf in Resources */,
+				409099F2A2854D57AE91D73C /* AlegreyaSans-Italic.ttf in Resources */,
+				456DBE1BF38B4850A023076A /* AlegreyaSans-Light.ttf in Resources */,
+				F69B173F218F4D8ABC6CC96E /* AlegreyaSans-LightItalic.ttf in Resources */,
+				1CF1A404E0E0415D94B92818 /* AlegreyaSans-Medium.ttf in Resources */,
+				5BC25CA66CC541468B2649AF /* AlegreyaSans-MediumItalic.ttf in Resources */,
+				6DFC0930DBB34261BBF3FBA3 /* AlegreyaSans-Regular.ttf in Resources */,
+				FD2DC61C42FD4CD0B6A15E5C /* AlegreyaSans-Thin.ttf in Resources */,
+				E4949C5C341D4EE6A9816939 /* AlegreyaSans-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

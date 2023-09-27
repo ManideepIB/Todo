@@ -20,8 +20,12 @@ export const colors: Colors = {
   success: '',
   error: '',
   warning: '',
+  purple: '#9969C7',
 
-  AppTheme: '#EAF1F9',
+  // AppTheme: '#EAF1F9',
+  AppTheme: '#F9A31E',
+  // AppTheme: '#4cc0ee',
+
   BasicWhite: '#fff',
   BasicBlue: '#4700D8',
 
@@ -31,10 +35,10 @@ export const colors: Colors = {
   AlertGreen: '#27c97b',
   AlertBlue: '#00a6e3',
 
-  Red: '#E71F2C',
-  Orange: '#F9A31E',
-  Blue: '#0B6FB8',
-  Green: '#159F4E',
+  red: '#E71F2C',
+  orange: '#F9A31E',
+  blue: '#0B6FB8',
+  green: '#159F4E',
 
   //Field border
   FieldBorderColorActive: '#000',

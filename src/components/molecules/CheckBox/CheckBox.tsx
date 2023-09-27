@@ -21,8 +21,8 @@ export const CheckBox: React.FC<CheckBoxProps> = props => {
       <TouchableOpacity onPress={props.onPress}>
         <MaterialCommunityIcons
           name={iconName}
-          size={24}
-          color={colors.Orange}
+          size={props.size}
+          color={colors.AppTheme}
         />
       </TouchableOpacity>
       <AppText style={styles.title}>{props.title}</AppText>
@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: 'black',
     marginLeft: 15,
-    fontWeight: '600',
+    // fontWeight: '100',
+    fontFamily: 'AlegreyaSans-Bold',
   },
 });
