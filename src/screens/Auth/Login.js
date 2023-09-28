@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   StyleSheet,
   Text,
@@ -6,6 +6,7 @@ import {
   TextInput,
   SafeAreaView,
   TouchableOpacity,
+  Alert,
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import {useNavigation} from '@react-navigation/native';
@@ -15,11 +16,25 @@ import {useTheme} from '../../theme/theme';
 import {AppButton, AppText, AppTextInput} from '../../components/atoms';
 
 const Login = ({navigation}) => {
+  const [user, setUser] = useState({
+    email: '',
+    password: '',
+  });
   const theme = useTheme();
   console.log(theme);
-
+  console.log(user);
   // const {navigation} = props;
   // const navigation = useNavigation();
+
+  const handleLogin = () => {
+    const userEmail = 'john';
+    const userPassowrd = '123';
+    if (user.email === userEmail && user.password === userPassowrd) {
+      navigation.navigate(screenNames.HOME_TAB);
+    } else {
+      Alert.alert('Incorrect email or password');
+    }
+  };
 
   return (
     <SafeAreaView
@@ -41,15 +56,23 @@ const Login = ({navigation}) => {
             style={styles.input}
             textColor={theme === 'LIGHT' ? 'black' : 'white'}
             placeholder="Email"
+            value={user.email}
             placeholderTextColor={theme === 'LIGHT' ? 'black' : 'white'}
             height={50}
+            onChangeText={text => {
+              setUser({...user, email: text});
+            }}
           />
           <AppTextInput
             style={styles.input}
             textColor={theme === 'LIGHT' ? 'black' : 'white'}
             placeholder="Password"
+            value={user.password}
             placeholderTextColor={theme === 'LIGHT' ? 'black' : 'white'}
             height={50}
+            onChangeText={text => {
+              setUser({...user, password: text});
+            }}
           />
 
           <View style={styles.btnWrapper}>
@@ -63,7 +86,7 @@ const Login = ({navigation}) => {
                 m={10}
                 br={25}
                 p={10}
-                onPress={() => navigation.navigate(screenNames.HOME_TAB)}
+                onPress={handleLogin}
                 activeOpacity={0.7}>
                 <AppText textSize={20} textColor={colors.white} weight="600">
                   Log In
