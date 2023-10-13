@@ -1,12 +1,12 @@
 import {NavigationContainer} from '@react-navigation/native';
-import HomeStack from './StackNavigation';
-import MainTabBar from './BottomNavigation';
+
 import AuthStack from './AuthStack';
+import BottomNavigation from './BottomNavigation';
 
 function Navigator() {
   return (
     <NavigationContainer>
-      <AuthStack />
+      {false ? <BottomNavigation /> : <AuthStack />}
     </NavigationContainer>
   );
 }

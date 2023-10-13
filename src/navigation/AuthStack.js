@@ -4,12 +4,11 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Login from '../screens/Auth/Login';
 import ForgotPassword from '../screens/Auth/ForgotPassword';
 import SignUp from '../screens/Auth/SignUp';
-import HomeStack, {ProfileStack} from './StackNavigation';
-import MainTabBar from './BottomNavigation';
+
 import {screenNames} from '../utils/constants';
 import BottomTabBar from './BottomNavigation';
 import Welcome from '../screens/Home/Welcome';
-import Profile from '../screens/Account/Profile';
+import BottomNavigation from './BottomNavigation';
 
 const AuthStackScreens = createStackNavigator();
 
@@ -44,7 +43,7 @@ const AuthStack = () => {
       <AuthStackScreens.Screen name={screenNames.SIGNUP} component={SignUp} />
       <AuthStackScreens.Screen
         name={screenNames.HOME_TAB}
-        component={BottomTabBar}
+        component={BottomNavigation}
         options={{headerShown: false}}
       />
     </AuthStackScreens.Navigator>
