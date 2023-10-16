@@ -10,10 +10,12 @@ import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {useTheme} from '../theme/theme';
 import NewTask from '../screens/Home/NewTask';
 import {createStackNavigator} from '@react-navigation/stack';
-import {HomeStack, ProfileStack} from './StackNavigation';
+
 import {screenNames} from '../utils/constants';
 import Profile from '../screens/Account/Profile';
 import {DrawerNavigation, DrawerTab} from './DrawerNavigation';
+import ProfileStack from './StackNavigation/ProfileStack';
+import HomeStack from './StackNavigation/HomeStack';
 
 const Tab = createBottomTabNavigator();
 
@@ -56,8 +58,8 @@ const BottomNavigation = () => {
         },
       }}>
       <Tab.Screen
-        name={screenNames.HOME_DRAWER}
-        component={DrawerNavigation}
+        name={screenNames.HOME_STACK}
+        component={HomeStack}
         options={{
           tabBarIcon: ({focused}) => (
             <MaterialCommunityIcons
@@ -77,7 +79,7 @@ const BottomNavigation = () => {
         }}
       />
       <Tab.Screen
-        name={screenNames.PROFILE_TAB}
+        name={screenNames.PROFILE_STACK}
         component={ProfileStack}
         options={{
           tabBarIcon: ({focused}) => (

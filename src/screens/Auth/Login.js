@@ -22,6 +22,7 @@ const Login = ({navigation}) => {
   });
   const theme = useTheme();
   console.log(theme);
+<<<<<<< HEAD
   console.log(user);
   // const {navigation} = props;
   // const navigation = useNavigation();
@@ -35,6 +36,8 @@ const Login = ({navigation}) => {
       Alert.alert('Incorrect email or password');
     }
   };
+=======
+>>>>>>> master
 
   return (
     <SafeAreaView
@@ -45,7 +48,6 @@ const Login = ({navigation}) => {
       <View style={[styles.body]}>
         <View style={styles.wFull}>
           <View style={styles.row}>
-            {/* <Logo width={55} height={55} style={styles.mr7} /> */}
             <Text style={styles.brandName}>ToDo</Text>
           </View>
 
