@@ -10,7 +10,7 @@ import {useRoute} from '@react-navigation/native';
 const TaskDetails = ({route}) => {
   const details = route.params;
   // const [editedTask, setEditedTask] = useState(task);
-  console.log(details.taskData, '=========TaskDaetails');
+  // console.log(details.task.taskData.taskName, '=========TaskDaetails');
   const handleSave = () => {
     // Implement saving the edited task data here
     // You can use the `editedTask` state to update the task
@@ -32,7 +32,7 @@ const TaskDetails = ({route}) => {
         <View>
           {/* <AppText style={styles.detailsTitle}>Task </AppText> */}
           <AppText center style={styles.detailsTitle}>
-            {details.taskData.taskName}
+            {details.task.taskData.taskName}
           </AppText>
         </View>
 
@@ -48,11 +48,11 @@ const TaskDetails = ({route}) => {
             textColor={colors.black}
             ml={10}
             style={styles.detailsDescription}>
-            {details.taskData.description}
+            {details.task.taskData.description}
           </AppText>
         </View>
         <AppText center style={styles.detailsTitle}>
-          {details.taskData.startTime} - {details.taskData.endTime}
+          {details.task.taskData.startTime} - {details.task.taskData.endTime}
         </AppText>
       </View>
     </View>
