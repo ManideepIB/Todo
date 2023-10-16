@@ -30,6 +30,7 @@ import {useTheme} from '../../theme/theme';
 import LinearGradient from 'react-native-linear-gradient';
 import ProgressBar from '../../components/template/ProgressBar';
 import {screenNames} from '../../utils/constants';
+import {useDispatch, useSelector} from 'react-redux';
 
 const Home = () => {
   const theme = useTheme();
@@ -38,16 +39,19 @@ const Home = () => {
 
   const navigation = useNavigation();
   const route = useRoute();
-  const [tasks, setTasks] = useState([]);
-  const newTask = route.params?.taskData;
+  // const [tasks, setTasks] = useState([]);
+  // const newTask = route.params?.taskData;
 
-  useEffect(() => {
-    if (newTask) {
-      setTasks([...tasks, newTask]);
-    }
-  }, [newTask]);
-  console.log(newTask, '```taskDataHome```');
-  console.log(tasks, '```tasksHome```');
+  const tasks = useSelector(state => state.tasks);
+
+  // useEffect(() => {
+  //   if (newTask) {
+  //     setTasks([...tasks, newTask]);
+  //   }
+  // }, [newTask]);
+  // console.log(newTask, '```taskDataHome```');
+  // console.log(tasks.taskData, '```tasks.taskData--tasksHome```');
+  // console.log(tasks, '```tasks--tasksHome```');
 
   const container = {
     flex: 1,
@@ -142,14 +146,14 @@ const Home = () => {
           </View>
           <View style={{height: 400, paddingBottom: 50}}>
             <FlatList
-              data={tasks}
-              keyExtractor={item => item.id}
+              data={tasks.taskData}
+              keyExtractor={({id}) => id}
               renderItem={({item, index}) => (
                 <Task
-                  taskData={item}
+                  task={item}
                   onPressItem={() => {
                     navigation.navigate(screenNames.TASK_DETAILS, {
-                      taskData: item,
+                      task: item,
                     });
                   }}
                 />

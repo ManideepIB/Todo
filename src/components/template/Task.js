@@ -14,10 +14,11 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import {useTheme} from '../../theme/theme';
 import {AppText} from '../atoms';
 
-const Task = ({taskData, onPressItem}) => {
+const Task = ({task, onPressItem}) => {
   const theme = useTheme(); // Get the current theme
 
-  console.log(taskData, '```propstaskData```');
+  // console.log(task, '```propstaskData```');
+  // console.log(task.taskData.taskName, '```propstaskData```');
 
   return (
     <TouchableOpacity
@@ -34,18 +35,18 @@ const Task = ({taskData, onPressItem}) => {
             flexDirection: 'row',
             alignItems: 'center',
           }}>
-          <CheckBox size={30} isChecked={taskData.status === 'close'} />
+          <CheckBox size={30} isChecked={task.taskData.status === 'close'} />
           <View>
             <AppText
               style={[
                 styles.title,
                 {color: theme === 'LIGHT' ? 'black' : 'white'},
               ]}>
-              {taskData.taskName}
+              {task.taskData.taskName}
             </AppText>
             <View style={{marginLeft: 5}}>
               <AppText style={[{color: theme === 'LIGHT' ? 'black' : 'white'}]}>
-                {taskData.startTime} - {taskData.endTime}
+                {task.taskData.startTime} - {task.taskData.endTime}
               </AppText>
             </View>
           </View>

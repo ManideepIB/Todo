@@ -16,6 +16,8 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import LinearGradient from 'react-native-linear-gradient';
 import {screenNames} from '../../utils/constants';
 import TaskDetails from './TaskDetails';
+import {useDispatch, useSelector} from 'react-redux';
+import {addTodo} from '../../redux/actions/Task';
 
 const NewTask = ({navigation}) => {
   const theme = useTheme();
@@ -27,10 +29,13 @@ const NewTask = ({navigation}) => {
     endTime: '',
     description: '',
   });
+  const dispatch = useDispatch();
   // console.log(taskData, '---', taskData.taskName);
   const handleCreateTask = () => {
-    navigation.navigate(screenNames.HOME, {taskData});
-    // setTaskData('');
+    dispatch(addTodo(taskData));
+    // console.log(addTodo(taskData), '{{{{{{{{{}}}}}}');
+    navigation.navigate(screenNames.HOME);
+    setTaskData('');
   };
   return (
     <ScrollView
