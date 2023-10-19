@@ -3,7 +3,6 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Home from '../screens/Home/Home';
-import AddTask from '../screens/AddTask';
 import TaskDetails from '../screens/Home/TaskDetails';
 import {colors} from '../theme';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';

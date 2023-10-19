@@ -20,7 +20,7 @@ import {
 
 import {colors} from '../../theme';
 import {AppText, AppTextInput} from '../../components/atoms';
-import AddTask from '../AddTask';
+
 import data from '../../utils/data.json';
 import Task from '../../components/template/Task';
 import {useNavigation, useRoute} from '@react-navigation/native';
