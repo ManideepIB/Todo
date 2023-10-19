@@ -31,6 +31,8 @@ import LinearGradient from 'react-native-linear-gradient';
 import ProgressBar from '../../components/template/ProgressBar';
 import {screenNames} from '../../utils/constants';
 import {useDispatch, useSelector} from 'react-redux';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import {deleteTodo} from '../../redux/actions/Task';
 
 const Home = () => {
   const theme = useTheme();
@@ -39,22 +41,31 @@ const Home = () => {
 
   const navigation = useNavigation();
   const route = useRoute();
-  // const [tasks, setTasks] = useState([]);
-  // const newTask = route.params?.taskData;
-
   const tasks = useSelector(state => state.tasks);
 
-  // useEffect(() => {
-  //   if (newTask) {
-  //     setTasks([...tasks, newTask]);
-  //   }
-  // }, [newTask]);
-  // console.log(newTask, '```taskDataHome```');
-  // console.log(tasks.taskData, '```tasks.taskData--tasksHome```');
-  // console.log(tasks, '```tasks--tasksHome```');
+  const dispatch = useDispatch();
 
-  const container = {
-    flex: 1,
+  // console.log(newTask, '```taskDataHome```');
+  console.log(tasks.taskData, '```tasks.taskData--tasksHome```');
+  // console.log(tasks, '```tasks--tasksHome```');
+  //
+
+  const handleDeleteTask = taskId => {
+    dispatch(deleteTodo(taskId)); // Pass the task's unique ID
+  };
+
+  const renderItem = ({item, index}) => {
+    return (
+      <Task
+        task={item}
+        onPressItem={() => {
+          navigation.navigate(screenNames.TASK_DETAILS, {
+            task: item,
+          });
+        }}
+        onDelete={() => handleDeleteTask(item.id)}
+      />
+    );
   };
 
   return (
@@ -148,16 +159,7 @@ const Home = () => {
             <FlatList
               data={tasks.taskData}
               keyExtractor={({id}) => id}
-              renderItem={({item, index}) => (
-                <Task
-                  task={item}
-                  onPressItem={() => {
-                    navigation.navigate(screenNames.TASK_DETAILS, {
-                      task: item,
-                    });
-                  }}
-                />
-              )}
+              renderItem={renderItem}
             />
           </View>
         </View>
@@ -182,10 +184,7 @@ const styles = StyleSheet.create({
     marginTop: 35,
   },
   progressBarContainer: {
-    // backgroundColor: 'green',
     margin: 10,
-    // width: '100%',
-    // alignContent: 'space-around',
   },
   progressBar: {
     height: 10,

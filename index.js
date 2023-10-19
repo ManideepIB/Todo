@@ -7,12 +7,18 @@ import App from './App';
 import {name as appName} from './app.json';
 import 'react-native-gesture-handler';
 import {Provider} from 'react-redux';
-import store from './src/redux/store/store';
+import store, {persistor} from './src/redux/store/store';
+import {PersistGate} from 'redux-persist/integration/react';
 
 const AppRoot = () => {
   return (
+    // <Provider store={store}>
+    //   <App />
+    // </Provider>
     <Provider store={store}>
-      <App />
+      <PersistGate persistor={persistor}>
+        <App />
+      </PersistGate>
     </Provider>
   );
 };

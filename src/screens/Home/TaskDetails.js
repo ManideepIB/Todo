@@ -10,7 +10,7 @@ import {useRoute} from '@react-navigation/native';
 const TaskDetails = ({route}) => {
   const details = route.params;
   // const [editedTask, setEditedTask] = useState(task);
-  // console.log(details.task.taskData.taskName, '=========TaskDaetails');
+  console.log(details.task.taskData.taskName, '=========TaskDaetails');
   const handleSave = () => {
     // Implement saving the edited task data here
     // You can use the `editedTask` state to update the task
