@@ -18,6 +18,7 @@ import {screenNames} from '../../utils/constants';
 import TaskDetails from './TaskDetails';
 import {useDispatch, useSelector} from 'react-redux';
 import {addTodo} from '../../redux/actions/Task';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const NewTask = ({navigation}) => {
   const theme = useTheme();
@@ -30,18 +31,34 @@ const NewTask = ({navigation}) => {
     description: '',
   });
   const dispatch = useDispatch();
-  // console.log(taskData, '---', taskData.taskName);
+  console.log(taskData, '---', taskData.taskName);
   const handleCreateTask = () => {
     dispatch(addTodo(taskData));
-    // console.log(addTodo(taskData), '{{{{{{{{{}}}}}}');
+    console.log(addTodo(taskData), '{{{{{{{{{}}}}}}');
     navigation.navigate(screenNames.HOME);
     setTaskData('');
   };
+
+  // const handleCreateTask = async () => {
+  //   try {
+  //     // store the task in async storage
+  //     const storedTask = await AsyncStorage.getItem('tasks');
+  //     const tasks = storedTask ? JSON.parse(storedTask) : [];
+
+  //     tasks.push(taskData);
+
+  //     await AsyncStorage.setItem('tasks', JSON.stringify(tasks));
+  //     dispatch(addTodo(tasks));
+  //     navigation.navigate(screenNames.HOME);
+  //     setTaskData('');
+  //     console.log(tasks, 'NewTasks::::');
+  //   } catch (error) {
+  //     console.error('Error creating task', error);
+  //   }
+  // };
   return (
     <ScrollView
       style={[
-        // styles.container,
-
         {
           flex: 1,
           backgroundColor: theme === 'LIGHT' ? 'white' : '#212436',
@@ -184,11 +201,6 @@ const NewTask = ({navigation}) => {
 export default NewTask;
 
 const styles = StyleSheet.create({
-  container: {
-    // flex: 1,
-    // height: '100%',
-    // backgroundColor: 'red',
-  },
   btnWrapper: {
     marginTop: 35,
     shadowColor: '#000',

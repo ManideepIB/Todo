@@ -22,22 +22,17 @@ const Login = ({navigation}) => {
   });
   const theme = useTheme();
   console.log(theme);
-<<<<<<< HEAD
   console.log(user);
-  // const {navigation} = props;
-  // const navigation = useNavigation();
 
   const handleLogin = () => {
-    const userEmail = 'john';
-    const userPassowrd = '123';
+    const userEmail = '1';
+    const userPassowrd = '1';
     if (user.email === userEmail && user.password === userPassowrd) {
       navigation.navigate(screenNames.HOME_TAB);
     } else {
       Alert.alert('Incorrect email or password');
     }
   };
-=======
->>>>>>> master
 
   return (
     <SafeAreaView
