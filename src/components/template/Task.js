@@ -88,6 +88,12 @@ const Task = ({task, onPressItem, onDelete}) => {
                   {task.taskData.startTime} - {task.taskData.endTime}
                 </AppText>
               </View>
+              <View style={{marginLeft: 5}}>
+                <AppText
+                  style={[{color: theme === 'LIGHT' ? 'black' : 'white'}]}>
+                  {task.taskData.dateTime}
+                </AppText>
+              </View>
             </View>
           </View>
 

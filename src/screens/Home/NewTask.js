@@ -7,7 +7,7 @@ import {
   TextInput,
   View,
 } from 'react-native';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {useTheme} from '../../theme/theme';
 import {AppButton, AppText, AppTextInput} from '../../components/atoms';
 import {colors} from '../../theme';
@@ -19,8 +19,15 @@ import TaskDetails from './TaskDetails';
 import {useDispatch, useSelector} from 'react-redux';
 import {addTodo} from '../../redux/actions/Task';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import DateTimePickerModal from 'react-native-modal-datetime-picker';
+import {Keyboard} from 'react-native';
 
 const NewTask = ({navigation}) => {
+  const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
+  const [isStartTimePickerVisible, setStartTimePickerVisibility] =
+    useState(false);
+  const [isEndTimePickerVisible, setEndTimePickerVisibility] = useState(false);
+
   const theme = useTheme();
   const [taskData, setTaskData] = useState({
     taskName: '',
@@ -30,35 +37,100 @@ const NewTask = ({navigation}) => {
     endTime: '',
     description: '',
   });
+
+  // useEffect(() => {
+  //   setTaskData({
+  //     taskName: '',
+  //     categories: '',
+  //     dateTime: '',
+  //     startTime: '',
+  //     endTime: '',
+  //     description: '',
+  //   });
+  // }, []);
   const dispatch = useDispatch();
   console.log(taskData, '---', taskData.taskName);
   const handleCreateTask = () => {
     dispatch(addTodo(taskData));
     console.log(addTodo(taskData), '{{{{{{{{{}}}}}}');
     navigation.navigate(screenNames.HOME);
-    setTaskData('');
+    setTaskData({
+      taskName: '',
+      categories: '',
+      dateTime: '',
+      startTime: '',
+      endTime: '',
+      description: '',
+    });
   };
 
-  // const handleCreateTask = async () => {
-  //   try {
-  //     // store the task in async storage
-  //     const storedTask = await AsyncStorage.getItem('tasks');
-  //     const tasks = storedTask ? JSON.parse(storedTask) : [];
+  const showDatePicker = () => {
+    setDatePickerVisibility(true);
+  };
 
-  //     tasks.push(taskData);
+  const hideDatePicker = () => {
+    setDatePickerVisibility(false);
+  };
 
-  //     await AsyncStorage.setItem('tasks', JSON.stringify(tasks));
-  //     dispatch(addTodo(tasks));
-  //     navigation.navigate(screenNames.HOME);
-  //     setTaskData('');
-  //     console.log(tasks, 'NewTasks::::');
-  //   } catch (error) {
-  //     console.error('Error creating task', error);
-  //   }
-  // };
+  const handleDateConfirm = date => {
+    console.log('A date has been picked: ', date);
+    const dt = new Date(date);
+    const x = dt.toISOString().split('T');
+    const x1 = x[0].split('-');
+    console.log(x1[2] + '/' + x1[1] + '/' + x1[0]);
+    setTaskData({...taskData, dateTime: x1[2] + '/' + x1[1] + '/' + x1[0]});
+    hideDatePicker();
+  };
+  const showTimePicker = pickerType => {
+    if (pickerType === 'startTime') {
+      setStartTimePickerVisibility(true);
+    } else if (pickerType === 'endTime') {
+      setEndTimePickerVisibility(true);
+    }
+  };
+
+  const hideTimePicker = () => {
+    setStartTimePickerVisibility(false);
+    setEndTimePickerVisibility(false);
+  };
+
+  const handleStartTimeConfirm = date => {
+    console.log('A time has been picked: ', date);
+    const dt = new Date(date);
+    const x = dt.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
+    // const x1 = x[0].split(':');
+    console.log(x, 'time');
+    setTaskData({...taskData, startTime: x});
+
+    hideTimePicker();
+  };
+  const handleEndTimeConfirm = date => {
+    console.log('A time has been picked: ', date);
+    const dt = new Date(date);
+    const x = dt.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'});
+    // const x1 = x[0].split(':');
+    console.log(x, 'time');
+    setTaskData({...taskData, endTime: x});
+
+    hideTimePicker();
+  };
+
+  const handleGoBack = () => {
+    navigation.navigate(screenNames.HOME_STACK);
+    setTaskData({
+      taskName: '',
+      categories: '',
+      dateTime: '',
+      startTime: '',
+      endTime: '',
+      description: '',
+    });
+  };
   return (
     <ScrollView
       style={[
+        // styles.container,
+
         {
           flex: 1,
           backgroundColor: theme === 'LIGHT' ? 'white' : '#212436',
@@ -77,9 +149,10 @@ const NewTask = ({navigation}) => {
               <AppButton
                 color={theme === 'LIGHT' ? colors.grey : '#212436'}
                 style={{borderRadius: 10, padding: 8}}
-                onPress={() => {
-                  navigation.navigate(screenNames.HOME_STACK);
-                }}>
+                // onPress={() => {
+                //   navigation.navigate(screenNames.HOME_STACK);
+                // }}
+                onPress={handleGoBack}>
                 <AppText textSize={20} textColor={colors.white} weight="600">
                   <MaterialCommunityIcons
                     name="less-than"
@@ -125,38 +198,52 @@ const NewTask = ({navigation}) => {
                 setTaskData({...taskData, categories: text})
               }
             />
+
             <AppTextInput
-              label="Date & Time"
+              label="Day"
               textColor={theme === 'LIGHT' ? 'black' : 'white'}
-              placeholder="Enter"
+              placeholder="Select Day"
               placeholderTextColor={theme === 'LIGHT' ? 'black' : 'white'}
               height={50}
               value={taskData.dateTime}
-              onChangeText={text => setTaskData({...taskData, dateTime: text})}
+              onFocus={() => {
+                showDatePicker();
+                Keyboard.dismiss();
+              }}
+              // onChangeText={text => setTaskData({...taskData, dateTime: text})}
             />
+
             <View
               style={{flexDirection: 'row', justifyContent: 'space-between'}}>
               <AppTextInput
                 label="Start Time"
                 textColor={theme === 'LIGHT' ? 'black' : 'white'}
-                placeholder="Enter"
+                placeholder="Select Start Time"
                 placeholderTextColor={theme === 'LIGHT' ? 'black' : 'white'}
                 height={50}
                 width={150}
                 value={taskData.startTime}
-                onChangeText={text =>
-                  setTaskData({...taskData, startTime: text})
-                }
+                onFocus={() => {
+                  showTimePicker('startTime');
+                  Keyboard.dismiss();
+                }}
+                // onChangeText={text =>
+                //   setTaskData({...taskData, startTime: text})
+                // }
               />
               <AppTextInput
                 label="End Time"
                 textColor={theme === 'LIGHT' ? 'black' : 'white'}
-                placeholder="Enter"
+                placeholder="Select End Time"
                 placeholderTextColor={theme === 'LIGHT' ? 'black' : 'white'}
                 height={50}
                 width={150}
                 value={taskData.endTime}
-                onChangeText={text => setTaskData({...taskData, endTime: text})}
+                onFocus={() => {
+                  showTimePicker('endTime');
+                  Keyboard.dismiss();
+                }}
+                // onChangeText={text => setTaskData({...taskData, endTime: text})}
               />
             </View>
             <AppTextInput
@@ -191,6 +278,30 @@ const NewTask = ({navigation}) => {
                 </AppButton>
               </LinearGradient>
             </View>
+            <View>
+              <DateTimePickerModal
+                isVisible={isDatePickerVisible}
+                mode="date"
+                onConfirm={handleDateConfirm}
+                onCancel={hideDatePicker}
+              />
+            </View>
+            <View>
+              <DateTimePickerModal
+                isVisible={isStartTimePickerVisible}
+                mode="time"
+                onConfirm={handleStartTimeConfirm}
+                onCancel={hideTimePicker}
+              />
+            </View>
+            <View>
+              <DateTimePickerModal
+                isVisible={isEndTimePickerVisible}
+                mode="time"
+                onConfirm={handleEndTimeConfirm}
+                onCancel={hideTimePicker}
+              />
+            </View>
           </View>
         </View>
       </KeyboardAvoidingView>
@@ -201,6 +312,11 @@ const NewTask = ({navigation}) => {
 export default NewTask;
 
 const styles = StyleSheet.create({
+  container: {
+    // flex: 1,
+    // height: '100%',
+    // backgroundColor: 'red',
+  },
   btnWrapper: {
     marginTop: 35,
     shadowColor: '#000',
