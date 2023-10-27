@@ -17,7 +17,7 @@ import LinearGradient from 'react-native-linear-gradient';
 import {screenNames} from '../../utils/constants';
 import TaskDetails from './TaskDetails';
 import {useDispatch, useSelector} from 'react-redux';
-import {addTodo} from '../../redux/actions/Task';
+import {addTodo} from '../../redux/actions/TaskAction';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import {Keyboard} from 'react-native';

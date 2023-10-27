@@ -15,6 +15,7 @@ import Profile from '../screens/Account/Profile';
 import {DrawerNavigation, DrawerTab} from './DrawerNavigation';
 import ProfileStack from './StackNavigation/ProfileStack';
 import HomeStack from './StackNavigation/HomeStack';
+import WeatherStack from './StackNavigation/WeatherStack';
 
 const Tab = createBottomTabNavigator();
 
@@ -70,11 +71,43 @@ const BottomNavigation = () => {
         }}
       />
       <Tab.Screen
+        name={'asd'}
+        component={HomeStack}
+        options={{
+          tabBarIcon: ({focused}) => (
+            <MaterialCommunityIcons
+              name={focused ? 'home' : 'home-outline'}
+              color={colors.AppTheme}
+              size={30}
+            />
+          ),
+        }}
+      />
+      <Tab.Screen
         name={screenNames.NEW_TASK_TAB}
         component={NewTask}
         options={{
           tabBarStyle: {display: 'none'},
           tabBarButton: props => <CustomAddTaskTabButton {...props} />,
+        }}
+      />
+      <Tab.Screen
+        name={'weather'}
+        component={WeatherStack}
+        options={{
+          tabBarIcon: ({focused}) => (
+            <MaterialCommunityIcons
+              name={focused ? 'cloud' : 'weather-partly-cloudy'}
+              color={colors.AppTheme}
+              size={30}
+            />
+          ),
+          tabBarStyle: {
+            borderTopLeftRadius: 30,
+            borderTopRightRadius: 30,
+            backgroundColor: theme === 'LIGHT' ? '#363750' : '#363750',
+            position: 'absolute',
+          },
         }}
       />
       <Tab.Screen
