@@ -32,7 +32,7 @@ import ProgressBar from '../../components/template/ProgressBar';
 import {screenNames} from '../../utils/constants';
 import {useDispatch, useSelector} from 'react-redux';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import {deleteTodo} from '../../redux/actions/Task';
+import {deleteTodo} from '../../redux/actions/TaskAction';
 
 const Home = () => {
   const theme = useTheme();

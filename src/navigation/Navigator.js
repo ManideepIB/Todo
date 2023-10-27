@@ -6,7 +6,7 @@ import BottomNavigation from './BottomNavigation';
 function Navigator() {
   return (
     <NavigationContainer>
-      {false ? <BottomNavigation /> : <AuthStack />}
+      {true ? <BottomNavigation /> : <AuthStack />}
     </NavigationContainer>
   );
 }

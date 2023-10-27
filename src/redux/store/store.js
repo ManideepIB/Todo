@@ -10,7 +10,7 @@ import persistStore from 'redux-persist/es/persistStore';
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
-  whitelist: ['tasks'],
+  // whitelist: ['tasks'],
 };
 
 const persistedReducer = persistReducer(persistConfig, RootReducer);
