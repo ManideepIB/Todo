@@ -11,7 +11,7 @@ import React, {useEffect, useState} from 'react';
 import {useTheme} from '../../theme/theme';
 import {AppButton, AppText, AppTextInput} from '../../components/atoms';
 import {colors} from '../../theme';
-import {TouchableOpacity} from 'react-native-gesture-handler';
+
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import LinearGradient from 'react-native-linear-gradient';
 import {screenNames} from '../../utils/constants';
@@ -21,6 +21,8 @@ import {addTodo} from '../../redux/actions/TaskAction';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import {Keyboard} from 'react-native';
+import DropdownComponent from '../../components/template/DropdownComponent';
+import CustomDropdown from '../../components/template/CustomDropdown';
 
 const NewTask = ({navigation}) => {
   const [isDatePickerVisible, setDatePickerVisibility] = useState(false);
@@ -38,6 +40,8 @@ const NewTask = ({navigation}) => {
     description: '',
   });
 
+  const [taskNameError, setTaskNameError] = useState('');
+
   // useEffect(() => {
   //   setTaskData({
   //     taskName: '',
@@ -50,18 +54,24 @@ const NewTask = ({navigation}) => {
   // }, []);
   const dispatch = useDispatch();
   console.log(taskData, '---', taskData.taskName);
+
   const handleCreateTask = () => {
-    dispatch(addTodo(taskData));
-    console.log(addTodo(taskData), '{{{{{{{{{}}}}}}');
-    navigation.navigate(screenNames.HOME);
-    setTaskData({
-      taskName: '',
-      categories: '',
-      dateTime: '',
-      startTime: '',
-      endTime: '',
-      description: '',
-    });
+    if (taskData.taskName.trim() === '') {
+      setTaskNameError('Task Name is required');
+    } else {
+      setTaskNameError('');
+      dispatch(addTodo(taskData));
+      console.log(addTodo(taskData), '{{{{{{{{{}}}}}}');
+      navigation.navigate(screenNames.HOME);
+      setTaskData({
+        taskName: '',
+        categories: '',
+        dateTime: '',
+        startTime: '',
+        endTime: '',
+        description: '',
+      });
+    }
   };
 
   const showDatePicker = () => {
@@ -125,9 +135,18 @@ const NewTask = ({navigation}) => {
       endTime: '',
       description: '',
     });
+    setTaskNameError('');
+  };
+
+  const handleTaskNameBlur = () => {
+    if (taskData.taskName.trim() === '') {
+      setTaskNameError('Task Name is required');
+    } else {
+      setTaskNameError('');
+    }
   };
   return (
-    <ScrollView
+    <View
       style={[
         // styles.container,
 
@@ -179,15 +198,26 @@ const NewTask = ({navigation}) => {
               backgroundColor: theme === 'LIGHT' ? 'white' : '#212436',
             }}>
             <AppTextInput
-              label="Task Name"
+              label="Task Name "
               textColor={theme === 'LIGHT' ? 'black' : 'white'}
               placeholder="Enter"
               placeholderTextColor={theme === 'LIGHT' ? 'black' : 'white'}
               height={50}
               value={taskData.taskName}
-              onChangeText={text => setTaskData({...taskData, taskName: text})}
+              onChangeText={text => {
+                setTaskData({...taskData, taskName: text});
+                setTaskNameError('');
+              }}
+              required={true}
+              // onBlur={handleTaskNameBlur} // Handle onBlur event
             />
-            <AppTextInput
+
+            {/* Show error message if Task Name is empty */}
+            {taskNameError !== '' && (
+              <AppText textColor="red">{taskNameError}</AppText>
+            )}
+
+            {/* <AppTextInput
               label="Categories"
               textColor={theme === 'LIGHT' ? 'black' : 'white'}
               placeholder="Enter"
@@ -197,7 +227,22 @@ const NewTask = ({navigation}) => {
               onChangeText={text =>
                 setTaskData({...taskData, categories: text})
               }
-            />
+            /> */}
+            <View>
+              <AppText>Categories</AppText>
+              {/* <DropdownComponent
+                selectedCategory={taskData.categories}
+                onCategoryChange={selectedCategory =>
+                  setTaskData({...taskData, categories: selectedCategory})
+                }
+              /> */}
+              <CustomDropdown
+                category={taskData.categories}
+                onCategoryChange={category =>
+                  setTaskData({...taskData, categories: category})
+                }
+              />
+            </View>
 
             <AppTextInput
               label="Day"
@@ -210,9 +255,9 @@ const NewTask = ({navigation}) => {
                 showDatePicker();
                 Keyboard.dismiss();
               }}
+              // style={{margin: 50}}
               // onChangeText={text => setTaskData({...taskData, dateTime: text})}
             />
-
             <View
               style={{flexDirection: 'row', justifyContent: 'space-between'}}>
               <AppTextInput
@@ -305,7 +350,7 @@ const NewTask = ({navigation}) => {
           </View>
         </View>
       </KeyboardAvoidingView>
-    </ScrollView>
+    </View>
   );
 };
 

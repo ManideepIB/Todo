@@ -54,6 +54,9 @@ const TaskDetails = ({route}) => {
         <AppText center style={styles.detailsTitle}>
           {details.task.taskData.startTime} - {details.task.taskData.endTime}
         </AppText>
+        <AppText center style={styles.detailsTitle}>
+          {details.task.taskData.categories}
+        </AppText>
       </View>
     </View>
   );

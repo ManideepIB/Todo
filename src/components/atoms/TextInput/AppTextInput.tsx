@@ -37,13 +37,13 @@ export const AppTextInput: React.FC<AppTextInputProps> = ({
   br,
   bw = 1,
   borderColor = colors.darkgrey,
-
   width = '100%',
   height = 40,
   // borderWidth = 1,
   flex,
   label,
   placeholder,
+  required,
   style,
   ...props
 }) => {
@@ -92,6 +92,7 @@ export const AppTextInput: React.FC<AppTextInputProps> = ({
           textColor={textColor}
           style={styles.label}>
           {label}
+          {required && <AppText textColor={colors.AlertRed}>*</AppText>}
         </AppText>
       )}
       <RNTextInput
@@ -99,6 +100,7 @@ export const AppTextInput: React.FC<AppTextInputProps> = ({
         style={[styles.input, customInputStyles]}
         {...props}
       />
+      {/* {required && <AppText textColor="red">{label} must enter</AppText>} */}
     </View>
   );
 };

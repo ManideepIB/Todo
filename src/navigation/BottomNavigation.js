@@ -76,7 +76,7 @@ const BottomNavigation = () => {
         options={{
           tabBarIcon: ({focused}) => (
             <MaterialCommunityIcons
-              name={focused ? 'home' : 'home-outline'}
+              name={focused ? 'note-edit' : 'note-edit-outline'}
               color={colors.AppTheme}
               size={30}
             />
