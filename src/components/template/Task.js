@@ -49,7 +49,7 @@ const Task = ({task, onPressItem, onDelete}) => {
     <TouchableOpacity
       style={styles.deleteButton}
       onPress={() => handleDelete()}>
-      <MaterialIcons name="delete" size={34} color={colors.white} />
+      <MaterialIcons name="delete" size={40} color={colors.white} />
     </TouchableOpacity>
   );
   // console.log(task.id, '```prop```');
@@ -81,6 +81,13 @@ const Task = ({task, onPressItem, onDelete}) => {
                   {color: theme === 'LIGHT' ? 'black' : 'white'},
                 ]}>
                 {task.taskData.taskName}
+              </AppText>
+              <AppText
+                // mv={10}
+                // textSize={26}
+                custFamily="Alegreya-MediumItalic"
+                style={[{color: theme === 'LIGHT' ? 'black' : 'white'}]}>
+                {task.taskData.categories}
               </AppText>
               <View style={{marginLeft: 5}}>
                 <AppText
@@ -137,12 +144,14 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     marginLeft: -20,
     elevation: 8,
-    height: 75,
+    height: 112,
     width: 85,
     alignItems: 'center',
     justifyContent: 'center',
     borderTopRightRadius: 12,
     borderBottomRightRadius: 12,
   },
+
+  label: {},
 });
 export default Task;

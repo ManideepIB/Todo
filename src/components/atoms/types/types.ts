@@ -52,7 +52,7 @@ export type CustomTextProps = {
 
 export type CustomTextInputProps = {
   label: string | undefined;
-
+  required?: boolean | undefined;
   borderWidth?: number | undefined;
 };
 
